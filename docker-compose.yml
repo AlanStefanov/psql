@@ -1,0 +1,21 @@
+#ASTEFANOV
+version: '3.1'
+
+services:
+  db:
+    image: postgres:13.3          
+    restart: always
+    environment: 
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: agencia_digital
+    ports: 
+      - "5432:5432"
+
+
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
