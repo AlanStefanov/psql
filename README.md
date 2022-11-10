@@ -1,4 +1,5 @@
 **Postgres + Adminer**
+----------------------
  Postgres with adminer - compose
  To run enter the following command: "docker-compose up" or "docker compose up".
  Pulling of official hub.docker.
